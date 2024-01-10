@@ -1,0 +1,19 @@
+//pairs
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    
+   pair<int , int> p = {1 , 2};
+   cout<<p.first<<"  "<<p.second<<endl;
+   
+   pair<int , pair<string , int>> s = {1 , {"hello" , 4}};
+   cout<<s.first<<"  "<<s.second.second<<"  "<<s.second.first<<endl;
+   
+   pair<int , int> arr[] = {{1,2} , {4 , 5} ,{99 , 54}};
+   cout<<arr[1].second<<"   "<<arr[0].first<<"   "<<arr[2].first;
+    
+    return 0;
+}
