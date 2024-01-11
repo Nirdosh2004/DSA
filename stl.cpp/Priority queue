@@ -3,6 +3,8 @@
 using namespace std;
 
 inline void explainPriorityQueue(){
+
+    //maximum heap
     priority_queue<int> pq;
     pq.push(3); //{3}
     pq.push(5); //{5,3}
