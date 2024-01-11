@@ -3,6 +3,8 @@
 #include<vector>
 using namespace std;
 
+
+//time complexity of stack is O(1)  
 inline void explainstack(){
     stack<int> st;
     st.push(1);
