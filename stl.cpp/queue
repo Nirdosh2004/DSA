@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+#include<vector>
+#include<queue>
+using namespace std;
+
+
+//time complexity is O(1)
+inline void explainqueue(){
+    queue<int> q;
+    q.push(1);
+    q.push(2);
+    q.emplace(3);
+    cout<<q.front()+1<<endl;
+    cout<<q.back()<<endl;
+    q.front()+=5;
+    cout<<q.front()<<endl;
+    q.pop();
+    cout<<q.front()<<endl;
+    cout<<q.back();
+}
+int main(){
+    
+    explainqueue();
+    return 0;
+}
