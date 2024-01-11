@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+#include<vector>
+using namespace std;
+
+inline void explainPriorityQueue(){
+    priority_queue<int> pq;
+    pq.push(3); //{3}
+    pq.push(5); //{5,3}
+    pq.push(4); //{5,4,3}
+    pq.emplace(10) ; //{10,5,4,3}
+    
+    cout<<pq.top()<<endl;
+    pq.pop();
+    cout<<pq.top()<<endl;
+    
+    
+    //minimum heap
+    priority_queue<int , vector<int> , greater<int>> p;
+    p.push(2);// {2}
+    p.push(3); //{2,3}
+    p.push(4) ; //{2,3,4};
+    cout<<p.top()<<endl;
+    p.pop();
+    cout<<p.top()<<endl;
+    
+}
+
+int main(){
+    
+    explainPriorityQueue();
+    return 0;
+}
