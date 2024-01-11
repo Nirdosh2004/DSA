@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+#include<vector>
+#include<list> 
+using namespace std;
+
+
+inline void explainlist(){
+    list<int> ls ; // works as doubly linked list
+    ls.push_back(2); //{2};
+    for(auto i : ls){
+        cout<<i<<"  ";
+    }cout<<endl;
+    ls.emplace_back(3) ; //{2,3}
+     for(auto i : ls){
+        cout<<i<<"  ";
+    }cout<<endl;
+    
+    ls.push_front(4); //{4,2,3}
+     for(auto i : ls){
+        cout<<i<<"  ";
+    }cout<<endl;
+    ls.emplace_front(6); //{6,4,2,3};
+     for(auto i : ls){
+        cout<<i<<"  ";
+    }cout<<endl;
+}
+int main(){
+explainlist();
+    return 0;
+}
