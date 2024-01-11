@@ -52,8 +52,59 @@ void explainvector(){
     auto c =4.35;
     cout<<a<<"   "<<b<<"   "<<c<<endl;
 }
+//second day of vector 
+#include<bits/stdc++.h>
+#include<vector>
+using namespace std;
+
+void explainvector(){
+    
+    vector<int> one(3,100);
+    // vector<int>::iterator i = one.begin();
+    for(auto i= one.begin() ; i!=one.end(); i++){
+        cout<<*(i)<<" ";
+    }
+    cout<<endl;
+    for(auto i : one){
+        cout<<i<<"  ";
+    }cout<<endl;
+    
+    //insert at position
+    //single insertion 
+    one.insert(one.begin()+1 , 2);
+     for(auto i : one){
+        cout<<i<<"  ";
+    }cout<<endl;
+    
+    //multiple insertion 
+    //first parameter -> from 
+    //second parameter -> size (number of elements to insert)
+    // third parameter -> which element to insert
+    one.insert(one.begin()+2 , 3 , 9);
+     for(auto i : one){
+        cout<<i<<"  ";
+    }cout<<endl;
+    //insert a vector inside another vector 
+    vector<int>copy(2,50);
+    copy.insert( copy.end() , one.begin() , one.end());
+    for(auto a : copy){
+        cout<<a<<"  ";
+    }
+    cout<<endl;
+    //for vector size calculatin 
+    cout<<copy.size()<<endl;
+  //for deleting all element at once
+    copy.clear();
+    //for checking vector is empty or not 
+      cout<<copy.empty()<<endl;
+}
+
 
 int main(){
+    explainvector();
+    
+    return 0;
+}
     
  explainvector() ;
     
