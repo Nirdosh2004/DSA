@@ -5,7 +5,7 @@
 using namespace std;
 
 void fn( int count , int n){
-    if(n==count-1)
+    if(n<count)
     return ;
     cout<<n<<endl;
     n--;
