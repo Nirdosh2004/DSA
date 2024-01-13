@@ -1,4 +1,4 @@
-// count the occerence of letters in string by using iterator in map 
+// count the occerence  by using iterator in map 
 
 #include<bits/stdc++.h>
 #include<vector>
